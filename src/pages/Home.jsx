@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <main className="container">
+      <header className="home-header">
+        <h1 className="home-title">It&rsquo;s been five years, have a trip down memory lane at the University of Arizona, 2021, hope all is well</h1>
+        <div className="videos-link-wrap">
+          <Link to="/videos" className="videos-link">Watch the Videos &rarr;</Link>
+        </div>
+      </header>
       <article className="letter">
         <p>
           Hello, just over five years ago in May of 2021, many of my friends and I were graduating
@@ -53,9 +59,6 @@ function Home() {
           Josh Swain
         </p>
 
-        <div className="videos-link-wrap">
-          <Link to="/videos" className="videos-link">Watch the Videos &rarr;</Link>
-        </div>
       </article>
     </main>
   )
