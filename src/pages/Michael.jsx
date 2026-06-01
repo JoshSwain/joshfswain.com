@@ -1,7 +1,11 @@
+import VideoPlayer from '../components/VideoPlayer'
+
 function Michael() {
   return (
     <main className="container">
-      <p className="coming-soon">Videos coming soon.</p>
+      <div className="video-grid">
+        <VideoPlayer idFlat="dil9UcXW2PA" />
+      </div>
     </main>
   )
 }
