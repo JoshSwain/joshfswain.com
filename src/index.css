@@ -23,56 +23,24 @@ body {
   color: var(--cream);
 }
 
-/* ── Header ── */
+/* ── Back to Home ── */
 
-.site-header {
-  background: var(--red);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-}
-
-.site-header-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  max-width: 860px;
+.back-home-wrap {
+  padding: 1.25rem 1.5rem 0;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+}
+
+.back-home-btn {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.15s;
 }
 
-.ua-block-a {
-  font-size: 3rem;
-  font-weight: 900;
-  font-family: 'Arial Black', Impact, sans-serif;
-  line-height: 1;
+.back-home-btn:hover {
   color: white;
-  text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
-  letter-spacing: -2px;
-  border: 3px solid white;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.ua-name {
-  font-family: 'Arial Black', Impact, sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  color: white;
-}
-
-.ua-tagline {
-  font-family: Georgia, serif;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-style: italic;
-  margin-top: 1px;
 }
 
 /* ── Layout ── */

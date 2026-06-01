@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom'
 import VideoPlayer from '../components/VideoPlayer'
 
 function Videos() {
   return (
     <main className="container">
       <div className="videos-header">
-        <Link to="/" className="back-link">&larr; Back</Link>
         <h1>The Videos</h1>
       </div>
 

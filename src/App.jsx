@@ -1,5 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
-import SiteHeader from './components/SiteHeader'
+import { Routes, Route, Outlet, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import Videos from './pages/Videos'
 import Anthony from './pages/Anthony'
@@ -11,23 +10,33 @@ import Michael from './pages/Michael'
 import AaronMichael from './pages/AaronMichael'
 import Josh from './pages/Josh'
 
-function App() {
+function WithBackButton() {
   return (
     <>
-      <SiteHeader />
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/videos" element={<Videos />} />
-      <Route path="/anthony" element={<Anthony />} />
-      <Route path="/nikita" element={<Nikita />} />
-      <Route path="/lydia" element={<Lydia />} />
-      <Route path="/aaron" element={<Aaron />} />
-      <Route path="/jorie-tess-kiana" element={<JorieTessKiana />} />
-      <Route path="/michael" element={<Michael />} />
-      <Route path="/aaron-michael" element={<AaronMichael />} />
-      <Route path="/josh" element={<Josh />} />
-    </Routes>
+      <div className="back-home-wrap">
+        <Link to="/" className="back-home-btn">&larr; Back to Home</Link>
+      </div>
+      <Outlet />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route element={<WithBackButton />}>
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/anthony" element={<Anthony />} />
+        <Route path="/nikita" element={<Nikita />} />
+        <Route path="/lydia" element={<Lydia />} />
+        <Route path="/aaron" element={<Aaron />} />
+        <Route path="/jorie-tess-kiana" element={<JorieTessKiana />} />
+        <Route path="/michael" element={<Michael />} />
+        <Route path="/aaron-michael" element={<AaronMichael />} />
+        <Route path="/josh" element={<Josh />} />
+      </Route>
+    </Routes>
   )
 }
 
