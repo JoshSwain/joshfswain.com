@@ -1,9 +1,12 @@
-function VideoPlayer({ title, id360, idFlat }) {
+function VideoPlayer({ title, duration, id360, idFlat }) {
   const thumbnailId = id360 || idFlat
 
   return (
     <div className="video-item">
-      {title && <h2>{title}</h2>}
+      <div className="video-meta">
+        {title && <h2>{title}</h2>}
+        {duration && <span className="video-duration">{duration}</span>}
+      </div>
       <img
         className="video-thumbnail"
         src={`https://img.youtube.com/vi/${thumbnailId}/hqdefault.jpg`}
