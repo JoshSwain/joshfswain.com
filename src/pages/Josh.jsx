@@ -1,7 +1,6 @@
 function Josh() {
   const routes = [
-    { path: '/anthony', label: 'Anthony (shorts clip)' },
-    { path: '/anthony-real', label: 'Anthony Real' },
+    { path: '/anthony', label: 'Anthony' },
     { path: '/nikita', label: 'Nikita' },
     { path: '/lydia', label: 'Lydia' },
     { path: '/aaron', label: 'Aaron' },

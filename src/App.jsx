@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Videos from './pages/Videos'
 import Anthony from './pages/Anthony'
-import AnthonyReal from './pages/AnthonyReal'
 import Nikita from './pages/Nikita'
 import Lydia from './pages/Lydia'
 import Aaron from './pages/Aaron'
@@ -17,7 +16,6 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/videos" element={<Videos />} />
       <Route path="/anthony" element={<Anthony />} />
-      <Route path="/anthony-real" element={<AnthonyReal />} />
       <Route path="/nikita" element={<Nikita />} />
       <Route path="/lydia" element={<Lydia />} />
       <Route path="/aaron" element={<Aaron />} />
