@@ -3,55 +3,146 @@
 }
 
 :root {
+  --navy: #0C234B;
+  --navy-light: #163468;
+  --red: #AB0520;
+  --red-dark: #8a0418;
+  --cream: #F5F0E8;
+  --gold: #E2A00F;
   font-family: Georgia, 'Times New Roman', serif;
   line-height: 1.8;
-  font-weight: 400;
-  color: #1a1a1a;
-  background-color: #faf9f7;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(ellipse at 20% 80%, rgba(171, 5, 32, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(22, 52, 104, 0.8) 0%, transparent 50%);
+  color: var(--cream);
 }
 
-#root {
-  min-height: 100vh;
+/* ── Header ── */
+
+.site-header {
+  background: var(--red);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-a {
-  color: #5a4a3a;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.site-header-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 
-a:hover {
-  color: #3a2a1a;
+.ua-block-a {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Arial Black', Impact, sans-serif;
+  line-height: 1;
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+  letter-spacing: -2px;
+  border: 3px solid white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
+
+.ua-name {
+  font-family: 'Arial Black', Impact, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: white;
+}
+
+.ua-tagline {
+  font-family: Georgia, serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  margin-top: 1px;
+}
+
+/* ── Layout ── */
 
 .container {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
+/* ── Home page ── */
+
 .home-header {
-  margin-bottom: 3rem;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .home-title {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: normal;
-  line-height: 1.5;
-  color: #2a2a2a;
+  line-height: 1.6;
+  color: var(--cream);
   margin: 0 0 1.5rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.videos-link-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.videos-link {
+  display: inline-block;
+  padding: 0.65rem 1.8rem;
+  background: var(--red);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px rgba(171, 5, 32, 0.4);
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.videos-link:hover {
+  background: var(--red-dark);
+  box-shadow: 0 4px 14px rgba(171, 5, 32, 0.5);
+  color: white;
+}
+
+/* ── Letter card ── */
+
+.letter {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .letter p {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.4rem;
   font-size: 1.05rem;
   color: #2a2a2a;
+}
+
+.letter p:last-child {
+  margin-bottom: 0;
 }
 
 .sign-off {
@@ -59,70 +150,72 @@ a:hover {
   font-style: italic;
 }
 
-.videos-link-wrap {
-  margin-top: 2.5rem;
-  text-align: center;
+.postscript {
+  font-size: 0.88rem;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-.videos-link {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
-  border: 1px solid #5a4a3a;
-  border-radius: 4px;
-  text-decoration: none;
-  font-family: system-ui, sans-serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-  color: #5a4a3a;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.videos-link:hover {
-  background-color: #5a4a3a;
-  color: #faf9f7;
-}
+/* ── Videos page ── */
 
 .videos-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.videos-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: var(--cream);
 }
 
 .back-link {
   font-family: system-ui, sans-serif;
   font-size: 0.9rem;
   text-decoration: none;
-  color: #888;
+  color: rgba(255,255,255,0.55);
+  white-space: nowrap;
 }
 
 .back-link:hover {
-  color: #333;
-}
-
-.videos-header h1 {
-  margin: 0.5rem 0 0;
-  font-size: 1.8rem;
-  font-weight: normal;
+  color: white;
 }
 
 .coming-soon {
   font-family: system-ui, sans-serif;
-  color: #888;
+  color: rgba(255,255,255,0.5);
   font-style: italic;
 }
+
+/* ── Video grid ── */
 
 .video-grid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+.video-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 .video-item h2 {
   font-size: 1rem;
   font-weight: normal;
   margin: 0 0 0.75rem;
-  color: #555;
+  color: rgba(255,255,255,0.7);
   font-family: system-ui, sans-serif;
+  letter-spacing: 0.02em;
 }
-
 
 .video-thumbnail {
   width: 100%;
@@ -139,24 +232,69 @@ a:hover {
 .video-btn {
   flex: 1;
   text-align: center;
-  padding: 0.55rem 1rem;
-  border: 1px solid #5a4a3a;
+  padding: 0.6rem 1rem;
+  background: var(--red);
   border-radius: 4px;
   text-decoration: none;
   font-family: system-ui, sans-serif;
   font-size: 0.9rem;
-  color: #5a4a3a;
-  transition: background-color 0.15s, color 0.15s;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 6px rgba(171, 5, 32, 0.35);
+  transition: background 0.15s, box-shadow 0.15s;
 }
 
 .video-btn:hover {
-  background-color: #5a4a3a;
-  color: #faf9f7;
+  background: var(--red-dark);
+  box-shadow: 0 3px 10px rgba(171, 5, 32, 0.5);
+  color: white;
 }
 
-.postscript {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 2rem;
+/* ── Josh admin page ── */
+
+.josh-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 
+.josh-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.josh-list a {
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+.josh-list a:hover {
+  color: white;
+}
+
+.josh-list .route-path {
+  color: rgba(255,255,255,0.35);
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .letter {
+    padding: 1.5rem;
+  }
+
+  .ua-name {
+    font-size: 0.8rem;
+  }
+
+  .ua-tagline {
+    font-size: 0.7rem;
+  }
+}

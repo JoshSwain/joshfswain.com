@@ -11,12 +11,14 @@ function Josh() {
 
   return (
     <main className="container">
-      <h1 style={{ fontWeight: 'normal', fontSize: '1.4rem', marginBottom: '2rem' }}>Private Routes</h1>
-      <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontFamily: 'system-ui, sans-serif' }}>
+      <h1 style={{ fontWeight: 'normal', fontSize: '1.4rem', marginBottom: '2rem', color: 'var(--cream)' }}>
+        Private Routes
+      </h1>
+      <ul className="josh-list">
         {routes.map(({ path, label }) => (
-          <li key={path} style={{ marginBottom: '1rem' }}>
-            <a href={path} style={{ fontSize: '1rem' }}>{label}</a>
-            <span style={{ color: '#999', marginLeft: '0.75rem', fontSize: '0.9rem' }}>{path}</span>
+          <li key={path}>
+            <a href={path}>{label}</a>
+            <span className="route-path">{path}</span>
           </li>
         ))}
       </ul>
