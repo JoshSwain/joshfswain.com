@@ -13,7 +13,7 @@ function Videos() {
         <VideoPlayer title="Dirtbags — Part 1" id360="SVcjU-vQ3pQ" idFlat="JwS2sISKDS4" />
         <VideoPlayer title="Dirtbags — Part 2" id360="Y6ip-FmJE3I" idFlat="CbNiQrmuahw" />
         <VideoPlayer title="At the Bourtyard" id360="qMz3fdNnAGw" idFlat="ans_bvO3XWY" />
-        <VideoPlayer title="Testing out the camera at the Swamp" id360="9yfbJI1ym4M" />
+        <VideoPlayer title="Testing out the camera at the Swamp" id360="HOWuCb61m5Y" />
       </div>
     </main>
   )
