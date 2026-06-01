@@ -126,6 +126,15 @@ body {
   margin-top: 1.5rem;
 }
 
+/* ── Page name heading ── */
+
+.page-name {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--cream);
+  margin: 0 0 1.5rem;
+}
+
 /* ── Videos page ── */
 
 .videos-header {
