@@ -132,6 +132,30 @@ a:hover {
   background: #111;
 }
 
+.toggle-btn {
+  margin-top: 0.75rem;
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #555;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.toggle-btn:hover {
+  border-color: #5a4a3a;
+  color: #5a4a3a;
+}
+
+.postscript {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;

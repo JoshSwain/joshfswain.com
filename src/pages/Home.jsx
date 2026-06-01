@@ -15,17 +15,17 @@ function Home() {
           seniors at the University of Arizona in the beloved city of Tucson. It was in the last two
           weeks that the reality really began to set in that this would likely be one of the few, if
           not the last, times that I had all of my friends in the university and city that, for
-          better or for worse, played a significant role in all of our lives. It was this
-          realization that spurred me to attempt to, however fruitfully, preserve that specific
-          moment so that I could cherish it when it had inevitably passed. And what better way to do
-          that than to buy a 360 degree camera off of Amazon for a suspiciously low price with the
-          prediction that I would have a VR headset five years from now that could let me relive the
-          experience (I still do not own a VR headset).
+          better or for worse, played a significant role in all of our lives. It was this realization
+          that spurred me to attempt to, however fruitfully, preserve that specific moment so that I
+          could cherish it when it had inevitably passed. And what better way to do that than to buy
+          a 360 degree camera off of Amazon for a suspiciously low price with the prediction that I
+          would have a VR headset five years from now that could let me relive the experience (I
+          still do not own a VR headset).
         </p>
 
         <p>
           So on May 8th, 2021, a large group of us went to the house known as the &ldquo;Bourtyard&rdquo; to
-          pregame before going to Dirtbag&rsquo;s Bar and Grill and I took these videos. Some were mostly
+          pregame before going to Dirtbag&rsquo;s Bar and Grill, and I took these videos. Some were mostly
           meant to capture the atmosphere, while others directly asked others to send themselves a
           message for five years from now. I put these videos in a Google drive and mostly forgot
           about them until I received a notification on my phone that five years had passed and that
@@ -46,12 +46,9 @@ function Home() {
           reminder to look at it in five years. I&rsquo;d also be happy to keep track for you if you need.
           The purpose is not to set goals that you will ultimately either achieve or not, but to
           capture a moment in your life and appreciate those around you. While college is years
-          behind us now and the cast and crew in the current season of our lives may be different
-          from what they once were, that doesn&rsquo;t make either better or worse. What matters most is
-          being in the present moment because that is truly all we have. I appreciate you suffering
-          through my sappy words. I just was moved to say something after being so proud of everyone
-          in these videos, and I couldn&rsquo;t leave it unsaid. Wishing you all the best, may the next 5
-          years be full of exciting new moments that the current you never could have imagined.
+          behind us now and the cast, crew, and setting of the current season of our lives may have
+          changed, I hope that you&rsquo;re enjoying the ride, and may the next 5 years be full of
+          exciting new moments that you never could have imagined.
         </p>
 
         <p className="sign-off">
@@ -59,6 +56,11 @@ function Home() {
           Josh Swain
         </p>
 
+        <p className="postscript">
+          P.S.: The videos for individuals I&rsquo;ve only shared with those who were in them, the other
+          videos are on YouTube but are not public and can only be accessed via the links. Please let
+          me know if you have any issue accessing them.
+        </p>
       </article>
     </main>
   )

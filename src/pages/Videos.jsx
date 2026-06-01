@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom'
-
-const videos = [
-  // { id: 'YOUTUBE_VIDEO_ID', title: 'Video title' },
-]
+import VideoPlayer from '../components/VideoPlayer'
 
 function Videos() {
   return (
@@ -12,25 +9,12 @@ function Videos() {
         <h1>The Videos</h1>
       </div>
 
-      {videos.length === 0 ? (
-        <p className="coming-soon">Videos coming soon.</p>
-      ) : (
-        <div className="video-grid">
-          {videos.map(({ id, title }) => (
-            <div key={id} className="video-item">
-              {title && <h2>{title}</h2>}
-              <div className="video-wrapper">
-                <iframe
-                  src={`https://www.youtube.com/embed/${id}`}
-                  title={title || id}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="video-grid">
+        <VideoPlayer title="Dirtbags — Part 1" id360="SVcjU-vQ3pQ" idFlat="JwS2sISKDS4" />
+        <VideoPlayer title="Dirtbags — Part 2" id360="Y6ip-FmJE3I" idFlat="CbNiQrmuahw" />
+        <VideoPlayer title="At the Bourtyard" id360="qMz3fdNnAGw" idFlat="ans_bvO3XWY" />
+        <VideoPlayer title="Testing out the camera at the Swamp" id360="9yfbJI1ym4M" />
+      </div>
     </main>
   )
 }
